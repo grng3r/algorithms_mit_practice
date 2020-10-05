@@ -1,6 +1,4 @@
-#include "algs.h"
-//TODO introsort
-
+//TODO Radix sort
 #include <stdio.h>
 void print_array(int arr[], int n){
 	int i;
@@ -18,7 +16,7 @@ int main(){
 	//int arr[] = {2,1};
 	int arr [] = {15, 31, 2, 54, 7, 8, 9, 23, 1};
 	int len = sizeof(arr)/sizeof(arr[0]);
-	heapsort_asc(arr, len);
+	introsort(arr, len);
 	print_array(arr, len);
 	//quicksort_desc(arr, len);
 	//print_array(arr, len);

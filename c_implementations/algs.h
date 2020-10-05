@@ -29,34 +29,6 @@ void insertion_sort_desc(long arr[], long len){
 	}
 }
 
-void insertion_sort_asc(long arr[], long len){
-	int i, j; 
-	long tmp;
-	for(i = 1; i < len; i++){
-		tmp = arr[i];
-		j = i -1;
-		while(j >= 0 && arr[j] > tmp){
-			arr[j+1] = arr[j];
-			j = j - 1;
-		}
-		arr[j+1] = tmp;
-	}
-	//return arr;
-}
-
-void insertion_sort_desc(long arr[], long len){
-	int i, j; 
-	long tmp;
-	for(i = 1; i < len; i++){
-		tmp = arr[i];
-		j = i -1;
-		while(j >= 0 && arr[j] < tmp){
-			arr[j+1] = arr[j];
-			j = j - 1;
-		}
-		arr[j+1] = tmp;
-	}
-}
 
 
 //merge sort help from hackr.io, www.cprogramming.com tutorial  and stackoverflow merge sort inplace question
